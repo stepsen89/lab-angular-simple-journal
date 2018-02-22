@@ -1,0 +1,13 @@
+
+
+<h1>Entries</h1>
+
+<div class="loading" *ngIf="!entry"> 
+    loading
+</div>
+
+   <ul *ngIf="entry">
+  <li *ngFor="let entry of entries">
+    <p>{{entry.title}}></p>
+  </li>
+</ul>
